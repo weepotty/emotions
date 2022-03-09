@@ -11,6 +11,7 @@ const correct = document.getElementById("correct");
 const wrong = document.getElementById("wrong");
 const reset = document.getElementById("reset");
 const instructions = document.getElementById("instructions");
+const dropdown = document.getElementById("dropdown");
 
 correct.style.display = "none";
 wrong.style.display = "none";
@@ -28,6 +29,7 @@ function buton(e) {
       reset.style.visibility = "visible";
       pictures.style.display = "none";
       instructions.innerHTML = "WELL DONE!";
+      dropdown.style.display = "none";
     } else {
       wrong.style.display = "block";
       correct.style.display = "none";
@@ -39,3 +41,9 @@ function buton(e) {
     location.reload();
   });
 }
+
+// Code for dropdown
+function imageChange() {
+  document.getElementById("animalImage").src = `images/${this.value}.png`;
+}
+document.getElementById("chooseAnimal").onchange = imageChange;
