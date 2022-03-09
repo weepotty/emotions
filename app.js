@@ -39,5 +39,3 @@ function buton(e) {
     location.reload();
   });
 }
-
-app.listen(process.env.PORT);
