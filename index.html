@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Feelings Game</title>
+    <link rel="stylesheet" href="css/mystyles.css" />
+  </head>
+  <body>
+    <div class="container has-text-centered ">
+      <div class="columns is-centered">
+        <div class="column is-two-thirds block">
+          <h1 class="is-size-2">Hello!</h1>
+          <h2 class="block is-size-7">Welcome to Match The Feelings.</h2>
+
+          <!-- instructions to play -->
+          <h2 class="block is-size-4" id="instructions">
+            Tap the
+            <span id="feeling" class="is-uppercase is-size-3">?</span> Face!
+          </h2>
+
+          <!-- Creating the dropdown choose animal -->
+<label for="list">Choose an animal: </label>          
+<select id="list" class="block has-text-centered">
+            <option value="bear">Bear</option>
+            <option value="giraffe">Giraffe</option>
+            <option value="narwhal">Narwhal</option>
+            <option value="mouse">Mouse</option>
+          </select>
+          
+
+
+
+          <!-- Correct and Wrong Images -->
+          <figure id="correct" class="block">
+            <img id="animalImage" src="images/bear.png" width="20%" />
+            <img
+              src="images/thumbsup.png"
+              width="20%"
+            />
+          </figure>
+
+          <figure id="wrong" class="block">
+            <img
+              src="https://media.istockphoto.com/vectors/try-again-vector-hand-drawn-illustration-with-cartoon-lettering-good-vector-id1182313635?k=20&m=1182313635&s=612x612&w=0&h=toLZUQHqj58aetcXbUGqgbY9Eu6dJ63kUwNiFym03dQ="
+              width="20%"
+            /><img src="images/thumbsdown.png" width="20%" class="ml-4" >
+          </figure>
+          
+          <div
+            id="feelingIcons" 
+            
+          >
+            
+              <div class="columns is-mobile" id="pictures">
+                <div class="column">
+                  <figure class="image is-128x128 container">
+                  <img
+         id="sad"
+                src="images/sad.png" class="box"
+              />
+              <img
+                id="happy"
+                src="images/happy.png" class="box"
+              />
+              <img
+                id="angry"
+                src="https://cdn-icons-png.flaticon.com/512/260/260222.png" class="box"
+              />
+            </figure>
+                </div>
+                <div class="column">
+                  <figure class="image is-128x128 container"> 
+
+                    <img
+                    id="surprised"
+                    src="https://cdn-icons-png.flaticon.com/512/742/742939.png" class="box"
+                  />
+    
+                  <img
+                    id="ouchie"
+                    src="images/ouchie.png" class="box"
+                  />
+                  <img
+                    id="worried"
+                    src="https://cdn-icons-png.flaticon.com/128/355/355183.png" class="box"
+                  />
+                  </figure>
+                 
+                </div>
+              
+              
+        
+          </div>
+          <p class="block">
+            <button id="reset" class="button is-dark is-size-7">PLAY AGAIN! (PLEASE)</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
